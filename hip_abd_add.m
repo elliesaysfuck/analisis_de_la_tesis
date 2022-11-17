@@ -37,6 +37,8 @@ plot(take(:,2), angl)
 title("Abducción-adducción cadera izquierda")
 hold on
 plot([min(take(:,2)), max(take(:,2))], [angl(1), angl(1)])
+xlabel("Tiempo (s)")
+ylabel("Ángulo (º)")
 hold off
 
 subplot(2,1,2)
@@ -44,6 +46,8 @@ plot(take(:,2), angr)
 title("Abducción-adducción cadera derecha")
 hold on
 plot([min(take(:,2)), max(take(:,2))], [angr(1), angr(1)])
+xlabel("Tiempo (s)")
+ylabel("Ángulo (º)")
 hold off
 
 %% cálculo de la desviación

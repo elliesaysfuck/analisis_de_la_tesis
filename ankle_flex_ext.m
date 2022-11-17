@@ -42,6 +42,8 @@ plot(take(:,2), angl)
 title("Flexión-extensión tobillo izquierda")
 hold on
 plot([min(take(:,2)), max(take(:,2))], [angl(1), angl(1)])
+xlabel("Tiempo (s)")
+ylabel("Ángulo (º)")
 hold off
 
 subplot(2,1,2)
@@ -49,6 +51,8 @@ plot(take(:,2), angr)
 title("Flexión-extensión tobillo derecha")
 hold on
 plot([min(take(:,2)), max(take(:,2))], [angr(1), angr(1)])
+xlabel("Tiempo (s)")
+ylabel("Ángulo (º)")
 hold off
 
 figure
@@ -57,6 +61,8 @@ plot(take(:,2), angl)
 title("Flexión-extensión tobillo")
 hold on
 plot(take(:,2), angr)
+xlabel("Tiempo (s)")
+ylabel("Ángulo (º)")
 hold off
 legend("Tobillo izquierdo", "Tobillo derecho")
 

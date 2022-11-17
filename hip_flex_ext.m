@@ -45,6 +45,8 @@ plot(take(:,2), angl)
 title("Flexión-extensión cadera izquierda")
 hold on
 plot([min(take(:,2)), max(take(:,2))], [angl(1), angl(1)])
+xlabel("Tiempo (s)")
+ylabel("Ángulo (º)")
 hold off
 
 subplot(2,1,2)
@@ -52,6 +54,8 @@ plot(take(:,2), angr)
 title("Flexión-extensión cadera derecha")
 hold on
 plot([min(take(:,2)), max(take(:,2))], [angr(1), angr(1)])
+xlabel("Tiempo (s)")
+ylabel("Ángulo (º)")
 hold off
 
 figure
@@ -60,6 +64,8 @@ plot(take(:,2), angl)
 title("Flexión-extensión cadera")
 hold on
 plot(take(:,2), angr)
+xlabel("Tiempo (s)")
+ylabel("Ángulo (º)")
 hold off
 legend("Cadera izquierda", "Cadera derecha")
 
