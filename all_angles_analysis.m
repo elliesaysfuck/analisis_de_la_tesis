@@ -19,9 +19,6 @@ clc
 [filename, path] = uigetfile('*.csv'); 
 csvpath = fullfile(path,filename); 
 take = readmatrix(csvpath);
-% las 8 primeras filas no nos interesan así que las quitamos, si queremos
-% quitar frames cambiaremos los valores
-take = take(8:length(take), :); 
 
 %% calculo de angulo segun tres marcadores (cadera ad-abd)
 
