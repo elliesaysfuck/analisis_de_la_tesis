@@ -19,6 +19,7 @@ clc
 [filename, path] = uigetfile('*.csv'); 
 csvpath = fullfile(path,filename); 
 take = readmatrix(csvpath);
+take = take(6:end,:);
 
 %% calculo de angulo segun tres marcadores (cadera ad-abd)
 
@@ -151,8 +152,8 @@ stdl = std(angl-angl(1));
 stdr = std(angr-angr(1));
 
 fprintf("La desviación media es de %f y %f grados para la cadera izquierda\n" + ...
-    "y derecha respectivamente, con una desviación estándar de %f y %f grados\n", ...
-    meanl, meanr, stdl, stdr)
+    "y derecha respectivamente (flex-ext), con una desviación estándar de %f" + ...
+    " y %f grados\n", meanl, meanr, stdl, stdr)
 
 %% calculo de angulo segun tres marcadores (rodilla flex-ext)
 
